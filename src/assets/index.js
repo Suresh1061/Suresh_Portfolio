@@ -1,4 +1,4 @@
-import pokedex from "./Project/pokedex.png";
+import pokedex from "./Project/Pokedex.png";
 import todolist from "./Project/todolist.png";
 import weather from "./Project/weather.png";
 
