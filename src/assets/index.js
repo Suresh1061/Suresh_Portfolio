@@ -27,8 +27,6 @@ import astronut from "./astronut.png";
 
 import resume from "./resume.pdf";
 import education_icon from "./education.png";
-import footerBg from "./footerBg.png";
-import sendimg from "./send.svg";
 
 export {
   pokedex,
@@ -57,6 +55,4 @@ export {
   astronut,
   resume,
   education_icon,
-  footerBg,
-  sendimg,
 };
