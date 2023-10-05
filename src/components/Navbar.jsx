@@ -48,7 +48,7 @@ const Navbar = () => {
               );
             })}
           </ul>
-          <a href="https://github.com/palhub2002" target="_blank">
+          <a href="https://github.com/Suresh1061" target="_blank">
             <img
               src={github}
               alt="github"

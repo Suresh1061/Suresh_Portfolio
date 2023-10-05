@@ -167,8 +167,8 @@ export const ProjectDetails = [
         color: "orange-text-gradient",
       },
     ],
-    gitlink: "https://github.com/palhub2002/PokeDex-App",
-    demolink: "https://poke-dex-app-theta.vercel.app/",
+    gitlink: "https://github.com/Suresh1061/Pokemon_Application",
+    demolink: "https://pokemon-application-tawny.vercel.app/",
   },
   {
     id: 2,
@@ -191,8 +191,8 @@ export const ProjectDetails = [
         color: "orange-text-gradient",
       },
     ],
-    gitlink: "https://github.com/palhub2002/Weather-App",
-    demolink: "https://weather-app-mauve-nine.vercel.app/",
+    gitlink: "https://github.com/Suresh1061/Weather_Application",
+    demolink: "https://weather-application-topaz.vercel.app/",
   },
   {
     id: 3,
@@ -215,7 +215,8 @@ export const ProjectDetails = [
         color: "orange-text-gradient",
       },
     ],
-    gitlink: "https://github.com/palhub2002/Advance-Todolist",
-    demolink: "https://advance-todolist.vercel.app/",
+    gitlink: "https://github.com/Suresh1061/Advance_Todolist",
+    demolink:
+      "https://advance-todolist-i97luoqze-suresh-pals-projects.vercel.app/",
   },
 ];
