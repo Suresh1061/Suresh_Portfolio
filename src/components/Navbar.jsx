@@ -13,7 +13,7 @@ const Navbar = () => {
   const [toggle, setToggle] = useState(false);
   return (
     <nav
-      className={`${styles.paddingX} w-full backdrop-blur-md bg-black/30  flex items-center py-5 fixed top-0 z-20 `}
+      className={`${styles.paddingX} w-full h-[80px] backdrop-blur-md bg-black/30  flex items-center py-5 fixed top-0 z-20 `}
     >
       <div className=" w-full flex items-center justify-between max-w-7xl mx-auto">
         <Link
@@ -24,13 +24,13 @@ const Navbar = () => {
             window.scrollTo(0, 0);
           }}
         >
-          <img src={logo} alt="logo" className=" sm:h-10 h-8 object-contain" />
+          <img src={logo} alt="logo" className="h-10  object-contain" />
           {/* <p className=" text-white text-[18px] font-bold cursor-pointer tracking-wide uppercase ">
             Suresh Pal
           </p> */}
         </Link>
         <div className="  flex items-center flex-row gap-6">
-          <ul className="max-[700px]:hidden list-none flex flex-row gap-6 lg:gap-10">
+          <ul className="max-[800px]:hidden list-none flex flex-row gap-6 lg:gap-10">
             {navLinks.map((link) => {
               return (
                 <li
@@ -61,7 +61,7 @@ const Navbar = () => {
             />
           </a>
 
-          <div className=" min-[700px]:hidden flex flex-1 justify-end items-center">
+          <div className=" min-[800px]:hidden flex flex-1 justify-end items-center">
             <div>
               {!toggle ? (
                 <AiOutlineMenu
@@ -81,7 +81,7 @@ const Navbar = () => {
           <div
             className={`${
               toggle ? "flex" : "hidden"
-            } min-[700px]:hidden p-6 backdrop-blur-lg bg-black/70 absolute top-[76px] right-0 w-[50%] h-screen z-10 ease-linear duration-300 flex flex-col justify-start items-center`}
+            } min-[800px]:hidden p-6 backdrop-blur-lg bg-black/70 absolute top-[80px] right-0 w-[60%] sm:w-[50%] h-screen z-10 ease-linear duration-300 flex flex-col justify-start items-center`}
           >
             <ul className=" list-none  flex flex-col  justify-center items-center gap-4 mt-8">
               {navLinks.map((link) => {
