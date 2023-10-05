@@ -24,10 +24,10 @@ const Navbar = () => {
             window.scrollTo(0, 0);
           }}
         >
-          <img src={logo} alt="logo" className=" w-9 h-9 object-contain" />
-          <p className=" text-white text-[18px] font-bold cursor-pointer tracking-wide uppercase ">
+          <img src={logo} alt="logo" className=" sm:h-10 h-8 object-contain" />
+          {/* <p className=" text-white text-[18px] font-bold cursor-pointer tracking-wide uppercase ">
             Suresh Pal
-          </p>
+          </p> */}
         </Link>
         <div className="  flex items-center flex-row gap-6">
           <ul className="max-[700px]:hidden list-none flex flex-row gap-6 lg:gap-10">

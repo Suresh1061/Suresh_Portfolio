@@ -19,13 +19,11 @@ import python from "./skills/python.png";
 import git from "./skills/git.png";
 import vscode from "./skills/vs.png";
 
-import logo from "./logo2.png";
+import logo from "./logo.png";
 import mobile from "./mobile.png";
 import web from "./web.png";
 import github from "./github.png";
 import astronut from "./astronut.png";
-
-import resume from "./resume.pdf";
 import education_icon from "./education.png";
 
 export {
@@ -53,6 +51,5 @@ export {
   web,
   github,
   astronut,
-  resume,
   education_icon,
 };

@@ -35,7 +35,7 @@ const Home = () => {
             target="_blank"
             className=" w-full flex justify-center items-center mt-4 sm:mt-10"
           >
-            <button className=" btn">
+            <button className="btn mt-2">
               <span>Resume</span>
               <div class="top"></div>
               <div class="left"></div>
