@@ -14,10 +14,11 @@
   position: relative;
   transition: 500ms;
   transition-delay: 500ms;
-  font-size: 16px;
+  font-size: 18px;
   text-transform: uppercase;
   letter-spacing: 2px;
   font-weight: 600;
+  font-family: sans-serif;
 }
 
 /* .btn span:hover{

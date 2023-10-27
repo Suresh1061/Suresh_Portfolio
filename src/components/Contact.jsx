@@ -15,7 +15,6 @@ const Contact = () => {
     message: "",
   });
   const [loading, setLoading] = useState(false);
-  const [status, setStatus] = useState(false);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -27,23 +26,12 @@ const Contact = () => {
   };
   const InputHandler = () => {
     // setLoading(true);
-    console.log(inputData.name, "", inputData.email, "", inputData.message);
-
+    // console.log(inputData.name, "", inputData.email, "", inputData.message);
     if (
       inputData.name != "" &&
       inputData.email != "" &&
       inputData.message != ""
     ) {
-      setStatus(true);
-      console.log(status);
-    } else {
-      setStatus(false);
-      message.warning("Please flill your data");
-    }
-
-    // console.log(status);
-
-    if (status) {
       setLoading(true);
       emailjs
         .send(
@@ -74,7 +62,45 @@ const Contact = () => {
             message.error("Something went wrong. Please try again.");
           }
         );
+    } else {
+      setLoading(false);
+      message.warning("Please flill your data");
     }
+
+    // console.log(status);
+
+    // if (status) {
+    //   setLoading(true);
+    //   emailjs
+    //     .send(
+    //       "service_n9fn082",
+    //       "template_89c3y5i",
+    //       {
+    //         from_name: inputData.name,
+    //         to_name: "Suresh Pal",
+    //         from_email: inputData.email,
+    //         to_email: "sureshabantika@gmail.com",
+    //         message: inputData.message,
+    //       },
+    //       "F3ftOlt4wpZ_Sgx-w"
+    //     )
+    //     .then(
+    //       () => {
+    //         message.success("Your message sent successfully");
+    //         setLoading(false);
+    //         setInputData({
+    //           name: "",
+    //           email: "",
+    //           message: "",
+    //         });
+    //       },
+    //       (error) => {
+    //         setLoading(false);
+    //         console.error(error);
+    //         message.error("Something went wrong. Please try again.");
+    //       }
+    //     );
+    // }
   };
 
   return (
