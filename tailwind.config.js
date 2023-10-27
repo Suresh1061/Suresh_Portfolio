@@ -20,7 +20,16 @@ module.exports = {
       },
       backgroundImage: {
         "hero-pattern": "url('/src/assets/herobg.png')",
-        "footer": "url('/src/assets/footerbg.png')",
+        footer: "url('/src/assets/footerbg.png')",
+      },
+      keyframes: {
+        pingpong: {
+          from: { transform: "translateY(20px)" },
+          to: { transform: "translateY(-20px)" },
+        },
+      },
+      animation: {
+        pingpong: "pingpong 2s infinite ease-in-out alternate",
       },
     },
   },

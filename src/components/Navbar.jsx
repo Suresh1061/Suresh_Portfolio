@@ -42,7 +42,7 @@ const Navbar = () => {
                 >
                   <div className=" group">
                     <a href={`#${link.id}`}>{link.name}</a>
-                    <div className=" absolute w-0 h-0.5 bg-white group-hover:w-full transition-[width] ease duration-300" />
+                    <div className=" absolute w-0 h-0.5 bg-white group-hover:w-full transition-[width] ease-out duration-300" />
                   </div>
                 </li>
               );
@@ -78,6 +78,7 @@ const Navbar = () => {
               )}
             </div>
           </div>
+
           <div
             className={`${
               toggle ? "flex" : "hidden"

@@ -14,6 +14,7 @@ import material from "./skills/material.png";
 import mongodb from "./skills/mongodb.png";
 import nodejs from "./skills/nodejs.png";
 import expressjs from "./skills/expressjs.png";
+import postman from "./skills/postman.png";
 import cpp from "./skills/cpp.png";
 import python from "./skills/python.png";
 import git from "./skills/git.png";
@@ -25,6 +26,7 @@ import web from "./web.png";
 import github from "./github.png";
 import astronut from "./astronut.png";
 import education_icon from "./education.png";
+import myphoto from "./myphoto.jpg";
 
 export {
   pokedex,
@@ -42,6 +44,7 @@ export {
   mongodb,
   nodejs,
   expressjs,
+  postman,
   cpp,
   python,
   git,
@@ -52,4 +55,5 @@ export {
   github,
   astronut,
   education_icon,
+  myphoto,
 };

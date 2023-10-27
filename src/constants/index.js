@@ -12,8 +12,9 @@ import {
   bootstrap,
   material,
   mongodb,
-    nodejs,
+  nodejs,
   expressjs,
+  postman,
   cpp,
   python,
   git,
@@ -82,66 +83,88 @@ export const technologies = [
   {
     name: "HTML 5",
     icon: html,
+    catagory: "font-end",
   },
   {
     name: "CSS 3",
     icon: css,
+    catagory: "font-end",
   },
   {
     name: "JavaScript",
     icon: javascript,
+    catagory: "font-end",
   },
   {
     name: "React JS",
     icon: reactjs,
+    catagory: "font-end",
   },
   {
     name: "Redux Toolkit",
     icon: redux,
+    catagory: "font-end",
   },
   {
     name: "Tailwind CSS",
     icon: tailwind,
+    catagory: "font-end",
   },
   {
     name: "Bootstrap",
     icon: bootstrap,
+    catagory: "font-end",
   },
   {
     name: "Material UI",
     icon: material,
+    catagory: "font-end",
   },
-  {
-    name: "Three JS",
-    icon: threejs,
-  },
+  // {
+  //   name: "Three JS",
+  //   icon: threejs,
+  //   catagory: "font-end",
+  // },
   {
     name: "Node JS",
     icon: nodejs,
+    catagory: "backend-end",
   },
   {
     name: "Express JS",
     icon: expressjs,
+    catagory: "backend-end",
   },
   {
     name: "MongoDB",
     icon: mongodb,
+    catagory: "backend-end",
   },
+  {
+    name: "Postman Api",
+    icon: postman,
+    catagory: "backend-end",
+  },
+
   {
     name: "C ++",
     icon: cpp,
+    catagory: "language",
   },
   {
     name: "Python",
     icon: python,
+    catagory: "language",
   },
   {
     name: "git",
     icon: git,
+    catagory: "tools",
   },
   {
     name: "VS Code",
     icon: vscode,
+    catagory: "tools",
   },
 ];
 

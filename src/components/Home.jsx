@@ -13,7 +13,9 @@ const Home = () => {
         className={` ${styles.paddingX} w-full absolute inset-0 top-[120px] min-[900px]:top-[80px] max-w-7xl mx-auto flex min-[900px]:flex-row flex-col min-[900px]:justify-around  items-center gap-6`}
       >
         <div className="order-2 min-[900px]:order-1 ">
-          <p className=" text-lg font-semibold">Hello, I'm 👋</p>
+          <p className=" text-lg font-semibold font-sans text-yellow-600">
+            Hello, I'm 👋
+          </p>
           <h1 className={`${styles.heroHeadText} font-serif text-[#915eff] `}>
             Suresh Pal
           </h1>
@@ -46,17 +48,17 @@ const Home = () => {
         </div>
         <div className=" order-1 min-[900px]:order-2">
           <motion.img
-            animate={{ y: [0, -24, 0] }}
-            transition={{
-              delay: 0.9,
-              duration: 1,
-              // ease: "easeInOut",
-              repeat: Infinity,
-              repeatType: "loop",
-            }}
+            // animate={{ y: [0, -24, 0] }}
+            // transition={{
+            //   delay: 0.9,
+            //   duration: 1,
+            //   // ease: "easeInOut",
+            //   repeat: Infinity,
+            //   repeatType: "loop",
+            // }}
             src={astronut}
             alt="astronut"
-            className=" w-[400px]"
+            className=" w-[400px] animate-pingpong"
           />
         </div>
       </div>
