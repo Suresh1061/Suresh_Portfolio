@@ -28,8 +28,8 @@ const About = () => {
             />
           </div>
         </div>
-        <div className=" min-[800px]:col-span-2 flex justify-center items-start flex-col min-[800px]:order-1 order-2 px-4">
-          <p className=" text-lg font-semibold font-sans text-yellow-600">
+        <div className=" min-[800px]:col-span-2  min-[800px]:order-1 order-2 px-4">
+          <p className=" text-lg font-semibold font-sans text-yellow-600 w-full">
             Hello, I'm 👋
           </p>
           <h1

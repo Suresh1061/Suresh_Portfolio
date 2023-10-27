@@ -21,11 +21,11 @@ const Skills = () => {
         {technologies.map((data) => {
           return (
             <div
-              className=" h-32 w-32 border rounded-lg green-pink-gradient  p-[1px] "
+              className=" h-28 w-28 border rounded-lg green-pink-gradient  p-[1px] "
               key={data.name}
             >
               <div className=" h-full w-full bg-black-100 rounded-lg p-2 flex justify-between flex-col">
-                <img src={data.icon} alt="" className=" mx-auto h-20"/>
+                <img src={data.icon} alt="" className=" mx-auto h-16"/>
                 <p className=" text-sm opacity-75 text-center">{data.name}</p>
               </div>
             </div>
