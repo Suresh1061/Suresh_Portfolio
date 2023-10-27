@@ -37,7 +37,8 @@ const Home = () => {
             target="_blank"
             className=" w-full flex justify-center items-center mt-4 sm:mt-10"
           >
-            <button className="btn mt-2">
+            <button className="flex lg:hidden w-[120px]  justify-center items-center tracking-wider font-sans mt-2 py-2 text-lg font-semibold border-2 rounded-full ">Resume</button>
+            <button className="btn mt-2 lg:block hidden font-sans">
               <span>Resume</span>
               <div class="top"></div>
               <div class="left"></div>
