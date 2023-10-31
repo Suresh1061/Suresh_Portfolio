@@ -1,19 +1,24 @@
 import { React, useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-
 import { styles } from "../Style";
 import { navLinks } from "../constants";
 import { logo } from "../assets";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import { github } from "../assets";
-import { FaLinkedinIn, FaInstagram, FaFacebookF } from "react-icons/fa";
+import { motion } from "framer-motion";
+import {
+  FaLinkedinIn,
+  FaInstagram,
+  FaFacebookF,
+  FaTwitter,
+} from "react-icons/fa";
 
 const Navbar = () => {
   const [active, setActive] = useState();
   const [toggle, setToggle] = useState(false);
   return (
     <nav
-      className={`${styles.paddingX} w-full h-[80px] backdrop-blur-md bg-black/30  flex items-center py-5 fixed top-0 z-20 `}
+      className={`${styles.paddingX} w-full h-[80px] backdrop-blur-md bg-black/30  flex items-center py-5 fixed top-0 z-20`}
     >
       <div className=" w-full flex items-center justify-between max-w-7xl mx-auto">
         <Link
@@ -24,20 +29,20 @@ const Navbar = () => {
             window.scrollTo(0, 0);
           }}
         >
-          <img src={logo} alt="logo" className="h-10  object-contain" />
-          {/* <p className=" text-white text-[18px] font-bold cursor-pointer tracking-wide uppercase ">
+          {/* <img src={logo} alt="logo" className="h-10  object-contain" /> */}
+          <p className=" text-[#915eff] text-[25px] md:text-3xl font-Dancing cursor-pointer tracking-wider ">
             Suresh Pal
-          </p> */}
+          </p>
         </Link>
         <div className="  flex items-center flex-row gap-6">
-          <ul className="max-[800px]:hidden list-none flex flex-row gap-6 lg:gap-10">
+          <ul className="max-[750px]:hidden list-none flex flex-row gap-6 lg:gap-10">
             {navLinks.map((link) => {
               return (
                 <li
                   key={link.id}
                   className={`${
                     active === link.name ? "text-white" : "text-secondary"
-                  } hover:text-white font-medium text-[18px] cursor-pointer relative`}
+                  } hover:text-white  font-Merriweather tracking-wider text-lg cursor-pointer relative`}
                   onClick={() => setActive(link.name)}
                 >
                   <div className=" group">
@@ -61,7 +66,7 @@ const Navbar = () => {
             />
           </a>
 
-          <div className=" min-[800px]:hidden flex flex-1 justify-end items-center">
+          <div className=" min-[750px]:hidden flex flex-1 justify-end items-center">
             <div>
               {!toggle ? (
                 <AiOutlineMenu
@@ -82,14 +87,16 @@ const Navbar = () => {
           <div
             className={`${
               toggle ? "flex" : "hidden"
-            } min-[800px]:hidden p-6 backdrop-blur-lg bg-black/70 absolute top-[80px] right-0 w-[60%] sm:w-[50%] h-screen z-10 ease-linear duration-300 flex flex-col justify-start items-center`}
+            } min-[750px]:hidden p-6 backdrop-blur-lg bg-black/70 absolute top-[80px] right-0 w-[60%] sm:w-[50%] h-screen z-10 ease-linear duration-300 flex flex-col justify-start items-center`}
           >
-            <ul className=" list-none  flex flex-col  justify-center items-center gap-4 mt-8">
+            <ul className=" list-none  flex flex-col  justify-center items-center gap-4 mt-4">
               {navLinks.map((link) => {
                 return (
                   <li
                     key={link.id}
-                    className={`text-white font-poppins font-medium text-xl py-4 cursor-pointer  `}
+                    className={`${
+                      active === link.name ? "text-white" : "text-secondary"
+                    } hover:text-white  text-lg cursor-pointer relative  font-Merriweather tracking-wider py-4`}
                     onClick={() => {
                       setActive(link.name);
                       setToggle(!toggle);
@@ -101,41 +108,52 @@ const Navbar = () => {
               })}
             </ul>
             <div className=" mt-10">
-              <h1 className=" text-lg text-center mb-8">Let's connect</h1>
-              <div className=" w-[150px]  mx-auto flex justify-evenly gap-2 text-gray-300">
-                <a
-                  href="https://www.facebook.com/profile.php?id=100074086172427&mibextid=2JQ9oc"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <FaFacebookF
-                    size={25}
-                    onClick={() => setToggle(!toggle)}
-                    className=" cursor-pointer hover:text-[#1877F2] hover:scale-110"
-                  />
-                </a>
-                <a
-                  href="https://instagram.com/sureshpal8158?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <FaInstagram
-                    size={25}
-                    onClick={() => setToggle(!toggle)}
-                    className=" cursor-pointer hover:text-[#e7563c]  hover:scale-110"
-                  />
-                </a>
-                <a
-                  href="https://www.linkedin.com/in/suresh-pal-80020922a"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <FaLinkedinIn
-                    size={25}
-                    onClick={() => setToggle(!toggle)}
-                    className=" cursor-pointer hover:text-[#0a47c2] hover:scale-110"
-                  />
-                </a>
+              <h1 className=" text-lg font-Lora tracking-wider font-[500] opacity-90 text-center mb-8">Let's connect</h1>
+              <div className=" w-[200px]  flex justify-between text-gray-250 ">
+                <div className="  rounded-full green-pink-gradient  p-[1px] ">
+                  <motion.a
+                    whileHover={{ scale: 1.1 }}
+                    transition={{ duration: 0.3 }}
+                    href="https://www.facebook.com/profile.php?id=100074086172427&mibextid=2JQ9oc"
+                    target="_blank"
+                    className=" h-9 w-9 bg-black-100  rounded-full flex justify-center items-center cursor-pointer hover:bg-[#0a47c2] "
+                  >
+                    <FaFacebookF size={20} />
+                  </motion.a>
+                </div>
+                <div className="  rounded-full green-pink-gradient  p-[1px] ">
+                  <motion.a
+                    whileHover={{ scale: 1.1 }}
+                    transition={{ duration: 0.3 }}
+                    href="https://instagram.com/sureshpal8158?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D"
+                    target="_blank"
+                    className=" h-9 w-9 bg-black-100  rounded-full flex justify-center items-center cursor-pointer hover:bg-[#e7563c] "
+                  >
+                    <FaInstagram size={20} />
+                  </motion.a>
+                </div>
+                <div className="  rounded-full green-pink-gradient  p-[1px] ">
+                  <motion.a
+                    whileHover={{ scale: 1.1 }}
+                    transition={{ duration: 0.3 }}
+                    href="https://www.linkedin.com/in/suresh-pal-80020922a"
+                    target="_blank"
+                    className=" h-9 w-9 bg-black-100  rounded-full flex justify-center items-center cursor-pointer hover:bg-[#0a47c2] "
+                  >
+                    <FaLinkedinIn size={20} />
+                  </motion.a>
+                </div>
+                <div className="  rounded-full green-pink-gradient  p-[1px] ">
+                  <motion.a
+                    whileHover={{ scale: 1.1 }}
+                    transition={{ duration: 0.3 }}
+                    href="https://twitter.com/SureshPal685"
+                    target="_blank"
+                    className=" h-9 w-9 bg-black-100  rounded-full flex justify-center items-center cursor-pointer hover:bg-[#0a47c2] "
+                  >
+                    <FaTwitter size={20} />
+                  </motion.a>
+                </div>
               </div>
             </div>
           </div>

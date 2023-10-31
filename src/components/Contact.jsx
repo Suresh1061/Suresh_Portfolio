@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { textVariant } from "../utils/motion";
 import SectionWrapper from "../utils/SectionWrapper";
 import { HiOutlineMail } from "react-icons/hi";
+import { styles } from "../Style";
 import { FaLocationDot, FaWhatsapp, FaTelegram } from "react-icons/fa6";
 import emailjs from "@emailjs/browser";
 import { message } from "antd";
@@ -25,8 +26,6 @@ const Contact = () => {
     e.preventDefault();
   };
   const InputHandler = () => {
-    // setLoading(true);
-    // console.log(inputData.name, "", inputData.email, "", inputData.message);
     if (
       inputData.name != "" &&
       inputData.email != "" &&
@@ -66,65 +65,34 @@ const Contact = () => {
       setLoading(false);
       message.warning("Please flill your data");
     }
-
-    // console.log(status);
-
-    // if (status) {
-    //   setLoading(true);
-    //   emailjs
-    //     .send(
-    //       "service_n9fn082",
-    //       "template_89c3y5i",
-    //       {
-    //         from_name: inputData.name,
-    //         to_name: "Suresh Pal",
-    //         from_email: inputData.email,
-    //         to_email: "sureshabantika@gmail.com",
-    //         message: inputData.message,
-    //       },
-    //       "F3ftOlt4wpZ_Sgx-w"
-    //     )
-    //     .then(
-    //       () => {
-    //         message.success("Your message sent successfully");
-    //         setLoading(false);
-    //         setInputData({
-    //           name: "",
-    //           email: "",
-    //           message: "",
-    //         });
-    //       },
-    //       (error) => {
-    //         setLoading(false);
-    //         console.error(error);
-    //         message.error("Something went wrong. Please try again.");
-    //       }
-    //     );
-    // }
   };
 
   return (
     <>
       <motion.div variants={textVariant()}>
-        <h1 className=" sm:text-5xl text-4xl  font-bold text-center mb-16">
-          Contact
-        </h1>
+        <h1 className={`${styles.headingText}`}>Contact</h1>
       </motion.div>
-      <motion.div initial={{x:-50 , opacity:0}} whileInView={{x:0, opacity:1}} transition={{duration:1, delay:0.3}}>
-        <h3 className=" text-3xl font-medium tracking-wide my-3">
+      <motion.div
+        initial={{ x: -50, opacity: 0 }}
+        whileInView={{ x: 0, opacity: 1 }}
+        transition={{ duration: 0.5, delay: 0.3 }}
+      >
+        <h3 className={`${styles.subHeadingText}`}>
           Get in touch
         </h3>
-        <p className=" text-secondary">
+        <p className=" opacity-70 text-lg font-Lora">
           I am available for any freelance or internship or full-time positions
         </p>
-        <p className=" text-secondary">Connect me and let's talk</p>
+        <p className=" opacity-70 text-lg font-Lora">
+          Connect me and let's talk
+        </p>
       </motion.div>
 
       <div className=" flex justify-center items-center  lg:justify-evenly flex-col min-[800px]:flex-row gap-10  sm:gap-4 flex-wrap mt-8">
         <motion.div
           initial={{ x: -80, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
-          transition={{ duration: 0.6, type: "spring", delay: 0.3 }}
+          transition={{ duration: 1, type: "spring", delay: 0.6 }}
         >
           <div className="  rounded-2xl sm:w-[400px] w-full green-pink-gradient p-[1px]">
             <div className="bg-black-100 p-5 rounded-2xl">
@@ -135,7 +103,7 @@ const Contact = () => {
                 loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"
               ></iframe>
-              <div className=" text-base text-white mt-6">
+              <div className=" text-[16px] font-Lora tracking-wider opacity-95 mt-6">
                 <h4 className=" flex  items-center gap-4 my-3">
                   <FaLocationDot size={22} color="#ff4d4d" />
                   Abantika
@@ -159,7 +127,7 @@ const Contact = () => {
         <motion.div
           initial={{ x: 80, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
-          transition={{ duration: 0.6, type: "spring", delay: 0.3 }}
+          transition={{ duration: 1, type: "spring", delay: 0.6 }}
           className=" sm:w-[600px] w-full  rounded-2xl green-pink-gradient p-[1px]"
         >
           <form
@@ -174,7 +142,7 @@ const Contact = () => {
                 name="name"
                 value={inputData.name}
                 onChange={handleChange}
-                className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium w-full shadow-inner"
+                className="bg-tertiary py-4 px-6 placeholder:opacity-70 text-white rounded-lg outline-none border-none font-medium w-full shadow-inner"
               />
             </label>
             <label htmlFor="email">
@@ -184,7 +152,7 @@ const Contact = () => {
                 name="email"
                 value={inputData.email}
                 onChange={handleChange}
-                className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium w-full"
+                className="bg-tertiary py-4 px-6 placeholder:opacity-70 text-white rounded-lg outline-none border-none font-medium w-full"
               />
             </label>
             <label htmlFor="message">
@@ -195,7 +163,7 @@ const Contact = () => {
                 name="message"
                 value={inputData.message}
                 onChange={handleChange}
-                className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium w-full min-h-[120px]"
+                className="bg-tertiary py-4 px-6 placeholder:opacity-70 text-white rounded-lg outline-none border-none font-medium w-full min-h-[120px]"
               />
             </label>
             <ButtonCom loading={loading} onclick={InputHandler} />
@@ -210,7 +178,10 @@ const ButtonCom = ({ loading, onclick }) => {
   return (
     <div>
       {!loading ? (
-        <button className=" btn1 py-3" onClick={onclick}>
+        <button
+          className=" btn1 py-3 font-[500] font-Lora tracking-wider"
+          onClick={onclick}
+        >
           <svg
             height="22"
             width="22"

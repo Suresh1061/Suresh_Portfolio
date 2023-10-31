@@ -1,5 +1,6 @@
 import React from "react";
 import { ProjectDetails } from "../constants";
+import { styles } from "../Style";
 import { motion } from "framer-motion";
 import { textVariant } from "../utils/motion";
 import SectionWrapper from "../utils/SectionWrapper";
@@ -25,7 +26,7 @@ const ProjectCard = ({
         delay: `${duration}`,
         type: "spring",
       }}
-      className="rounded-2xl sm:w-[360px] h-[430px] w-full green-pink-gradient p-[1px]"
+      className="rounded-2xl sm:w-[361px] h-[424px] w-full green-pink-gradient p-[2px] flex justify-center items-center"
     >
       <div className="bg-tertiary p-5 rounded-2xl">
         <div className=" relative h-[160px] w-full overflow-hidden">
@@ -37,15 +38,17 @@ const ProjectCard = ({
             className=" w-full h-full bg-cover rounded-md"
           />
         </div>
-        <div className=" mt-5 h-[208px] flex flex-col justify-between">
+        <div className=" mt-5 h-[200px] flex flex-col justify-between">
           <div>
-            <h1 className=" text-[20px] tracking-wide">{name}</h1>
-            <p className=" text-secondary  py-2">{description}</p>
-            <div className=" flex justify-start gap-4 text-[14px]">
+            <h1 className=" text-[21px] tracking-wide font-Roboto">{name}</h1>
+            <p className=" text-secondary text-[15px]  py-2 font-Lora tracking-wide">
+              {description}
+            </p>
+            <div className=" flex justify-start gap-4 text-[14px] ">
               {tags.map((tag) => (
                 <p
                   key={`${name}-${tag.name}`}
-                  className={`${tag.color} text-red-400`}
+                  className={`${tag.color} text-red-400 font-Lora tracking-wide font[500]`}
                 >
                   #{tag.name}
                 </p>
@@ -76,9 +79,7 @@ const Project = () => {
   return (
     <>
       <motion.div variants={textVariant()}>
-        <h1 className=" sm:text-5xl text-4xl  font-bold text-center mb-16">
-          Projects
-        </h1>
+        <h1 className={`${styles.headingText}`}>Projects</h1>
       </motion.div>
       <div className=" flex flex-wrap justify-center gap-7">
         {ProjectDetails.map((data) => (

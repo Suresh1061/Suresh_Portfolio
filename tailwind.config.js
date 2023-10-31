@@ -22,6 +22,19 @@ module.exports = {
         "hero-pattern": "url('/src/assets/herobg.png')",
         footer: "url('/src/assets/footerbg.png')",
       },
+      fontFamily: {
+        Roboto: "Roboto Slab",
+        Merriweather: "Merriweather",
+        Poppins: "Poppins",
+        Lora: "Lora",
+        Dancing: "Dancing Script",
+
+        libre: "Libre Baskerville",
+        Marck_Script: "Marck Script",
+        Volkhov: "Volkhov",
+        PT_Serif: "PT Serif",
+        Niconne: "Niconne",
+      },
       keyframes: {
         pingpong: {
           from: { transform: "translateY(20px)" },

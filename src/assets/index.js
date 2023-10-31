@@ -19,6 +19,8 @@ import cpp from "./skills/cpp.png";
 import python from "./skills/python.png";
 import git from "./skills/git.png";
 import vscode from "./skills/vs.png";
+import c from "./skills/c.png";
+import githublogo from "./skills/githublogo.png";
 
 import logo from "./logo.png";
 import mobile from "./mobile.png";
@@ -46,8 +48,10 @@ export {
   expressjs,
   postman,
   cpp,
+  c,
   python,
   git,
+  githublogo,
   vscode,
   logo,
   mobile,

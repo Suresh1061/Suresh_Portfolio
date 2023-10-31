@@ -7,18 +7,20 @@ import "react-vertical-timeline-component/style.min.css";
 import { motion } from "framer-motion";
 import { EducationDetails } from "../constants";
 import { textVariant } from "../utils/motion";
+import { styles } from "../Style";
 import SectionWrapper from "../utils/SectionWrapper";
 import { myphoto } from "../assets";
+
 
 const About = () => {
   return (
     <>
       <motion.div variants={textVariant()}>
-        <h1 className=" sm:text-5xl text-4xl  font-bold text-center mb-16">
+        <h1 className={`${styles.headingText}`}>
           About Me
         </h1>
       </motion.div>
-      <div className=" grid grid-cols-1 min-[800px]:grid-cols-3 gap-6 mb-16 ">
+      <div className=" grid grid-cols-1 min-[800px]:grid-cols-3 gap-6 mb-16">
         <div className=" flex justify-center items-center min-[800px]:order-2 order-1">
           <div className="blue-pink-gradient p-2 rounded-lg">
             <img
@@ -29,15 +31,15 @@ const About = () => {
           </div>
         </div>
         <div className=" min-[800px]:col-span-2  min-[800px]:order-1 order-2 px-4">
-          <p className=" text-lg font-semibold font-sans text-yellow-600 w-full">
+          <p className=" text-lg font-[500] font-Lora text-yellow-600 w-full">
             Hello, I'm 👋
           </p>
           <h1
-            className={` text-5xl font-serif font-[600] my-2 text-[#915eff] `}
+            className={` text-5xl lg:text-6xl font-serif font-[600] mt-2 mb-5 text-[#915eff] `}
           >
             Suresh Pal
           </h1>
-          <p className=" opacity-75">
+          <p className=" opacity-75 font-Lora tracking-wider text-lg">
             I am a passionate and driven individual pursuing a Bachelor of
             Technology degree in Electronics and Communication Engineering from
             Ramkrishna Mahato Government Engineering College in Purulia, West
@@ -52,12 +54,16 @@ const About = () => {
         </div>
       </div>
       <div>
+        <h1 className={`${styles.subHeadingText} text-center mb-16`}>Education Details</h1>
+        <div>
         <VerticalTimeline>
           {EducationDetails.map((item, index) => (
             <EducationCard key={index} education={item} />
           ))}
         </VerticalTimeline>
       </div>
+      </div>
+      
     </>
   );
 };
@@ -82,8 +88,8 @@ const EducationCard = ({ education }) => {
         </div>
       }
     >
-      <h3 className=" text-xl font-medium tracking-wide">{education.name}</h3>
-      <p className=" text-base text-secondary ">{education.description}</p>
+      <h3 className=" text-[22px]  tracking-wider  font-[500] font-Roboto">{education.name}</h3>
+      <p className=" text-base text-secondary  font-Lora">{education.description}</p>
     </VerticalTimelineElement>
   );
 };

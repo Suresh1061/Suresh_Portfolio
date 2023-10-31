@@ -16,8 +16,10 @@ import {
   expressjs,
   postman,
   cpp,
+  c,
   python,
   git,
+  githublogo,
   vscode,
   logo,
   mobile,
@@ -83,72 +85,71 @@ export const technologies = [
   {
     name: "HTML 5",
     icon: html,
-    catagory: "font-end",
+    catagory: "web",
   },
   {
     name: "CSS 3",
     icon: css,
-    catagory: "font-end",
+    catagory: "web",
   },
   {
     name: "JavaScript",
     icon: javascript,
-    catagory: "font-end",
+    catagory: "web",
   },
   {
     name: "React JS",
     icon: reactjs,
-    catagory: "font-end",
+    catagory: "web",
   },
   {
     name: "Redux Toolkit",
     icon: redux,
-    catagory: "font-end",
+    catagory: "web",
   },
   {
     name: "Tailwind CSS",
     icon: tailwind,
-    catagory: "font-end",
+    catagory: "web",
   },
   {
     name: "Bootstrap",
     icon: bootstrap,
-    catagory: "font-end",
+    catagory: "web",
   },
   {
     name: "Material UI",
     icon: material,
-    catagory: "font-end",
+    catagory: "web",
   },
   // {
   //   name: "Three JS",
   //   icon: threejs,
-  //   catagory: "font-end",
+  //   catagory: "web",
   // },
   {
     name: "Node JS",
     icon: nodejs,
-    catagory: "backend-end",
+    catagory: "web",
   },
   {
     name: "Express JS",
     icon: expressjs,
-    catagory: "backend-end",
+    catagory: "web",
   },
   {
     name: "MongoDB",
     icon: mongodb,
-    catagory: "backend-end",
+    catagory: "web",
   },
-  {
-    name: "Postman Api",
-    icon: postman,
-    catagory: "backend-end",
-  },
-
   {
     name: "C ++",
     icon: cpp,
+    catagory: "language",
+  },
+  {
+    name: "C ",
+    icon: c,
     catagory: "language",
   },
   {
@@ -157,14 +158,80 @@ export const technologies = [
     catagory: "language",
   },
   {
-    name: "git",
+    name: "JavaScript",
+    icon: javascript,
+    catagory: "language",
+  },
+  {
+    name: "Postman Api",
+    icon: postman,
+    catagory: "tools",
+  },
+  {
+    name: "Git",
     icon: git,
+    catagory: "tools",
+  },
+  {
+    name: "Github",
+    icon: github,
     catagory: "tools",
   },
   {
     name: "VS Code",
     icon: vscode,
     catagory: "tools",
+  },
+  {
+    name: "Web Development",
+    catagory: "tech",
+  },
+  {
+    name: "APIs",
+    catagory: "tech",
+  },
+  {
+    name: "UI/UX Design",
+    catagory: "tech",
+  },
+  {
+    name: "Open Source",
+    catagory: "tech",
+  },
+  {
+    name: "Data Stracture and Algorithem",
+    catagory: "tech",
+  },
+  {
+    name: "Photo & Video Editing",
+    catagory: "non_tech",
+  },
+  {
+    name: "Time Management",
+    catagory: "non_tech",
+  },
+  {
+    name: "Team Work",
+    catagory: "non_tech",
+  },
+  {
+    name: "Communication",
+    catagory: "non_tech",
+  },
+  {
+    name: "Bengali",
+    proficiency: "Native/Bilingual profiency",
+    catagory: "speak",
+  },
+  {
+    name: "English ",
+    proficiency: "Full professional proficiency",
+    catagory: "speak",
+  },
+  {
+    name: "Hindi",
+    proficiency: "Full professional proficiency",
+    catagory: "speak",
   },
 ];
 
