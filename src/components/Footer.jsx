@@ -24,7 +24,7 @@ const Footer = () => {
             transition={{ duration: 0.3 }}
             href="https://www.facebook.com/profile.php?id=100074086172427&mibextid=2JQ9oc"
             target="_blank"
-            className=" h-9 w-9 bg-black-100  rounded-full flex justify-center items-center cursor-pointer hover:bg-[#0a47c2] "
+            className=" h-9 w-9 bg-black-100  rounded-full flex justify-center items-center cursor-pointer hover:bg-[#1877F2] "
           >
             <FaFacebookF size={20} />
           </motion.a>
@@ -35,7 +35,7 @@ const Footer = () => {
             transition={{ duration: 0.3 }}
             href="https://instagram.com/sureshpal8158?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D"
             target="_blank"
-            className=" h-9 w-9 bg-black-100  rounded-full flex justify-center items-center cursor-pointer hover:bg-[#0a47c2]  "
+            className=" h-9 w-9 bg-black-100  rounded-full flex justify-center items-center cursor-pointer instra "
           >
             <FaInstagram size={20} />
           </motion.a>
@@ -46,7 +46,7 @@ const Footer = () => {
             transition={{ duration: 0.3 }}
             href="https://www.linkedin.com/in/suresh-pal-80020922a"
             target="_blank"
-            className=" h-9 w-9 bg-black-100  rounded-full flex justify-center items-center cursor-pointer hover:bg-[#0a47c2] "
+            className=" h-9 w-9 bg-black-100  rounded-full flex justify-center items-center cursor-pointer hover:bg-[#0072b1] "
           >
             <FaLinkedinIn size={20} />
           </motion.a>
@@ -57,7 +57,7 @@ const Footer = () => {
             transition={{ duration: 0.3 }}
             href="https://twitter.com/SureshPal685"
             target="_blank"
-            className=" h-9 w-9 bg-black-100  rounded-full flex justify-center items-center cursor-pointer hover:bg-[#0a47c2] "
+            className=" h-9 w-9 bg-black-100  rounded-full flex justify-center items-center cursor-pointer hover:bg-[#1DA1F2] "
           >
             <FaTwitter size={20} />
           </motion.a>

@@ -64,6 +64,12 @@ body {
   background: -webkit-linear-gradient(-90.13deg, #2332e6 1.9%, #d32ada 97.5%);
 }
 
+.instra:hover {
+  background-image: linear-gradient(to bottom,  #4f5bd5, #962fbf ,#d62976, #fa7e1e , #feda75, #a7f3d0 ),
+    linear-gradient(to bottom, #4f5bd5, #962fbf ,#d62976, #fa7e1e , #feda75, #a7f3d0 );
+  background-clip: content-box, padding-box;
+}
+
 .orange-text-gradient {
   background: #f12711; /* fallback for old browsers */
   background: -webkit-linear-gradient(
