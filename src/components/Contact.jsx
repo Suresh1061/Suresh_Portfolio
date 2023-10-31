@@ -75,11 +75,9 @@ const Contact = () => {
       <motion.div
         initial={{ x: -50, opacity: 0 }}
         whileInView={{ x: 0, opacity: 1 }}
-        transition={{ duration: 0.5, delay: 0.3 }}
+        transition={{ duration: 0.8, type: "keyframes", delay: 0.3 }}
       >
-        <h3 className={`${styles.subHeadingText}`}>
-          Get in touch
-        </h3>
+        <h3 className={`${styles.subHeadingText}`}>Get in touch</h3>
         <p className=" opacity-70 text-lg font-Lora">
           I am available for any freelance or internship or full-time positions
         </p>
@@ -88,11 +86,12 @@ const Contact = () => {
         </p>
       </motion.div>
 
-      <div className=" flex justify-center items-center  lg:justify-evenly flex-col min-[800px]:flex-row gap-10  sm:gap-4 flex-wrap mt-8">
+      <div className=" flex justify-center items-center  lg:justify-around flex-col min-[800px]:flex-row gap-10  sm:gap-4 flex-wrap mt-8">
         <motion.div
           initial={{ x: -80, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
-          transition={{ duration: 1, type: "spring", delay: 0.6 }}
+          transition={{ duration: 0.8, type: "keyframes", delay: 0.3 }}
+          className=" flex justify-center items-center"
         >
           <div className="  rounded-2xl sm:w-[400px] w-full green-pink-gradient p-[1px]">
             <div className="bg-black-100 p-5 rounded-2xl">
@@ -127,7 +126,7 @@ const Contact = () => {
         <motion.div
           initial={{ x: 80, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
-          transition={{ duration: 1, type: "spring", delay: 0.6 }}
+          transition={{ duration: 0.8, type: "keyframes", delay: 0.3 }}
           className=" sm:w-[600px] w-full  rounded-2xl green-pink-gradient p-[1px]"
         >
           <form

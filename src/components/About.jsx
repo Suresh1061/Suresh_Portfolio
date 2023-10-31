@@ -11,35 +11,32 @@ import { styles } from "../Style";
 import SectionWrapper from "../utils/SectionWrapper";
 import { myphoto } from "../assets";
 
-
 const About = () => {
   return (
     <>
       <motion.div variants={textVariant()}>
-        <h1 className={`${styles.headingText}`}>
-          About Me
-        </h1>
+        <h1 className={`${styles.headingText}`}>About Me</h1>
       </motion.div>
-      <div className=" grid grid-cols-1 min-[800px]:grid-cols-3 gap-6 mb-16">
+      <div className=" grid grid-cols-1 min-[800px]:grid-cols-3 gap-10 mb-16">
         <div className=" flex justify-center items-center min-[800px]:order-2 order-1">
-          <div className="blue-pink-gradient p-2 rounded-lg">
+          <div className=" bg-gradient-to-b from-[#e72121] to-[#8533f6] rounded-lg  ">
             <img
               src={myphoto}
               alt="my photo"
-              className=" h-[280px] w-[240px] object-cover mx-auto rounded-lg"
+              className=" h-[285px] w-[245px]  mx-auto rounded-lg translate-x-[8px] -translate-y-[8px] shadow-lg"
             />
           </div>
         </div>
         <div className=" min-[800px]:col-span-2  min-[800px]:order-1 order-2 px-4">
           <p className=" text-lg font-[500] font-Lora text-yellow-600 w-full">
-            Hello, I'm 👋
+            Hello, I'm
           </p>
           <h1
             className={` text-5xl lg:text-6xl font-serif font-[600] mt-2 mb-5 text-[#915eff] `}
           >
             Suresh Pal
           </h1>
-          <p className=" opacity-75 font-Lora tracking-wider text-lg">
+          <p className=" opacity-75 font-Lora tracking-wider text-lg text-justify">
             I am a passionate and driven individual pursuing a Bachelor of
             Technology degree in Electronics and Communication Engineering from
             Ramkrishna Mahato Government Engineering College in Purulia, West
@@ -54,16 +51,17 @@ const About = () => {
         </div>
       </div>
       <div>
-        <h1 className={`${styles.subHeadingText} text-center mb-16`}>Education Details</h1>
+        <h1 className={`${styles.subHeadingText} text-center mb-16`}>
+          Education Details
+        </h1>
         <div>
-        <VerticalTimeline>
-          {EducationDetails.map((item, index) => (
-            <EducationCard key={index} education={item} />
-          ))}
-        </VerticalTimeline>
+          <VerticalTimeline>
+            {EducationDetails.map((item, index) => (
+              <EducationCard key={index} education={item} />
+            ))}
+          </VerticalTimeline>
+        </div>
       </div>
-      </div>
-      
     </>
   );
 };
@@ -88,8 +86,12 @@ const EducationCard = ({ education }) => {
         </div>
       }
     >
-      <h3 className=" text-[22px]  tracking-wider  font-[500] font-Roboto">{education.name}</h3>
-      <p className=" text-base text-secondary  font-Lora">{education.description}</p>
+      <h3 className=" text-[22px]  tracking-wider  font-[500] font-Roboto">
+        {education.name}
+      </h3>
+      <p className=" text-base text-secondary  font-Lora">
+        {education.description}
+      </p>
     </VerticalTimelineElement>
   );
 };

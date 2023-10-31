@@ -5,7 +5,7 @@ import {
   FaLinkedinIn,
   FaTwitter,
 } from "react-icons/fa";
-import {motion} from "framer-motion"
+import { motion } from "framer-motion";
 
 const Footer = () => {
   const year = new Date().getFullYear();
@@ -35,7 +35,7 @@ const Footer = () => {
             transition={{ duration: 0.3 }}
             href="https://instagram.com/sureshpal8158?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D"
             target="_blank"
-            className=" h-9 w-9 bg-black-100  rounded-full flex justify-center items-center cursor-pointer hover:bg-[#e7563c] "
+            className=" h-9 w-9 bg-black-100  rounded-full flex justify-center items-center cursor-pointer hover:bg-[#0a47c2]  "
           >
             <FaInstagram size={20} />
           </motion.a>

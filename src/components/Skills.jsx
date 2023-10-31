@@ -35,7 +35,7 @@ const FrameworkSkills = () => {
           Web Frameworks
         </h1>
         <motion.div
-          transition={{ duration: 1, type: "spring", delay: 0.6 }}
+          transition={{ duration: 0.8, type: "keyframes", delay: 0.3 }}
           initial={{ x: -50, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
           className=" flex flex-row flex-wrap gap-6"
@@ -73,7 +73,7 @@ const ToolsAndLanguages = () => {
           Languages & Tools
         </h1>
         <motion.div
-          transition={{ duration: 1, type: "spring", delay: 0.6 }}
+          transition={{ duration: 0.8, type: "keyframes", delay: 0.3 }}
           initial={{ x: 50, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
           className=" flex flex-row flex-wrap gap-6"
@@ -111,7 +111,7 @@ const TechnicalTools = () => {
           Technical Skills
         </h1>
         <motion.div
-          transition={{ duration: 1, type: "spring", delay: 0.6 }}
+          transition={{ duration: 0.8, type: "keyframes", delay: 0.3 }}
           initial={{ x: -50, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
           className=" flex flex-row flex-wrap gap-6"
@@ -148,7 +148,7 @@ const NonTechnicalTools = () => {
           Non Techniacl Skills
         </h1>
         <motion.div
-          transition={{ duration: 1, type: "spring", delay: 0.6 }}
+          transition={{ duration: 0.8, type: "keyframes", delay: 0.3 }}
           initial={{ x: 50, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
           className=" flex flex-row flex-wrap gap-6"
@@ -185,10 +185,10 @@ const LanguageProficiency = () => {
           Language Proficiency
         </h1>
         <motion.div
-          transition={{ duration: 1, type: "spring", delay: 0.8 }}
+          transition={{ duration: 0.8, type: "keyframes", delay: 0.3 }}
           initial={{ x: -50, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
-          className=" flex flex-row flex-wrap gap-10 "
+          className=" flex flex-row flex-wrap gap-4 sm:gap-6 "
         >
           {technologies.map((data) => {
             return (
@@ -199,7 +199,7 @@ const LanguageProficiency = () => {
                     key={data.name}
                   >
                     <div className=" h-full w-full bg-black-100 rounded-lg py-2 px-4 flex justify-between flex-col">
-                      <p className=" text-[20px]  text-center font-Lora font-[500] tracking-wider">
+                      <p className=" text-[18px]  text-center font-Lora font-[500] tracking-wider">
                         {data.name}
                       </p>
                       <p className=" opacity-80 text-[14px] tracking-wider">

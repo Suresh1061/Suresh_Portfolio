@@ -29,6 +29,7 @@ import github from "./github.png";
 import astronut from "./astronut.png";
 import education_icon from "./education.png";
 import myphoto from "./myphoto.jpg";
+import logoimg from "./portfoliologo.png";
 
 export {
   pokedex,
@@ -60,4 +61,5 @@ export {
   astronut,
   education_icon,
   myphoto,
+  logoimg,
 };

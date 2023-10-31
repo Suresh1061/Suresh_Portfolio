@@ -12,9 +12,10 @@ import {
   FaFacebookF,
   FaTwitter,
 } from "react-icons/fa";
+import { logoimg } from "../assets";
 
 const Navbar = () => {
-  const [active, setActive] = useState();
+  const [active, setActive] = useState("Home");
   const [toggle, setToggle] = useState(false);
   return (
     <nav
@@ -30,9 +31,16 @@ const Navbar = () => {
           }}
         >
           {/* <img src={logo} alt="logo" className="h-10  object-contain" /> */}
-          <p className=" text-[#915eff] text-[25px] md:text-3xl font-Dancing cursor-pointer tracking-wider ">
-            Suresh Pal
-          </p>
+          <div className=" flex gap-1 justify-center items-center">
+            <img
+              src={logoimg}
+              alt=""
+              className=" h-[26px] w-[26px] border rounded-full"
+            />
+            <p className=" text-[#915eff] text-[28px] md:text-3xl font-Dancing cursor-pointer tracking-wider ">
+              Suresh Pal
+            </p>
+          </div>
         </Link>
         <div className="  flex items-center flex-row gap-6">
           <ul className="max-[750px]:hidden list-none flex flex-row gap-6 lg:gap-10">
@@ -47,7 +55,7 @@ const Navbar = () => {
                 >
                   <div className=" group">
                     <a href={`#${link.id}`}>{link.name}</a>
-                    <div className=" absolute w-0 h-0.5 bg-white group-hover:w-full transition-[width] ease-out duration-300" />
+                    <div className=" absolute w-0 h-[3px] bg-white group-hover:w-full transition-[width] ease-out duration-300" />
                   </div>
                 </li>
               );
@@ -87,7 +95,7 @@ const Navbar = () => {
           <div
             className={`${
               toggle ? "flex" : "hidden"
-            } min-[750px]:hidden p-6 backdrop-blur-lg bg-black/70 absolute top-[80px] right-0 w-[60%] sm:w-[50%] h-screen z-10 ease-linear duration-300 flex flex-col justify-start items-center`}
+            } min-[750px]:hidden p-6 backdrop-blur-lg bg-black/70 absolute top-[80px] right-0 w-[70%] sm:w-[50%] h-screen z-10 ease-linear duration-300 flex flex-col justify-start items-center`}
           >
             <ul className=" list-none  flex flex-col  justify-center items-center gap-4 mt-4">
               {navLinks.map((link) => {
@@ -108,7 +116,9 @@ const Navbar = () => {
               })}
             </ul>
             <div className=" mt-10">
-              <h1 className=" text-lg font-Lora tracking-wider font-[500] opacity-90 text-center mb-8">Let's connect</h1>
+              <h1 className=" text-lg font-Lora tracking-wider font-[500] opacity-90 text-center mb-8">
+                Let's connect
+              </h1>
               <div className=" w-[200px]  flex justify-between text-gray-250 ">
                 <div className="  rounded-full green-pink-gradient  p-[1px] ">
                   <motion.a

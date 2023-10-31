@@ -5,7 +5,6 @@ import { Typewriter } from "react-simple-typewriter";
 import { styles } from "../Style";
 import "./Button.css";
 
-
 const Home = () => {
   return (
     <section className=" w-full relative mx-auto h-screen" id="home">
@@ -16,7 +15,9 @@ const Home = () => {
           <p className=" text-lg font-[500]  font-Lora text-yellow-600">
             Hello, I'm 👋
           </p>
-          <h1 className={`${styles.homeHeadingText} font-serif text-[#915eff] `}>
+          <h1
+            className={`${styles.homeHeadingText} font-serif text-[#915eff] `}
+          >
             Suresh Pal
           </h1>
           <h1
