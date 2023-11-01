@@ -32,7 +32,7 @@ const About = () => {
             Hello, I'm
           </p>
           <h1
-            className={` text-5xl lg:text-6xl font-serif font-[600] mt-2 mb-5 text-[#915eff] `}
+            className={` text-5xl lg:text-6xl font-serif font-[600] mt-2 mb-5 violet-text-gradient`}
           >
             Suresh Pal
           </h1>
