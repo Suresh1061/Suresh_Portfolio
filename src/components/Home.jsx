@@ -11,7 +11,7 @@ const Home = () => {
       <div
         className={` ${styles.paddingX} w-full absolute inset-0 top-[120px] min-[900px]:top-[80px] max-w-7xl mx-auto flex min-[900px]:flex-row flex-col min-[900px]:justify-around  items-center gap-6`}
       >
-        <div className="order-2 min-[900px]:order-1 ">
+        <div className="order-2 min-[900px]:order-1  ">
           <p className=" text-lg font-[500]  font-Lora text-yellow-600">
             Hello, I'm 👋
           </p>
