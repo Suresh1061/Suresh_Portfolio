@@ -15,7 +15,7 @@ const About = () => {
   return (
     <>
       <motion.div variants={textVariant()}>
-        <h1 className={`${styles.headingText}`}>About Me</h1>
+        <h1 className={`${styles.headingText} `}>About Me</h1>
       </motion.div>
       <div className=" grid grid-cols-1 min-[800px]:grid-cols-3 gap-10 mb-16">
         <div className=" flex justify-center items-center min-[800px]:order-2 order-1">

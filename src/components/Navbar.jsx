@@ -32,11 +32,11 @@ const Navbar = () => {
         >
           {/* <img src={logo} alt="logo" className="h-10  object-contain" /> */}
           <div className=" flex gap-1 justify-center items-center">
-            <img
+            {/* <img
               src={logoimg}
               alt=""
               className=" h-[26px] w-[26px] border rounded-full"
-            />
+            /> */}
             <p className=" text-[#915eff] text-[28px] md:text-3xl font-Dancing cursor-pointer tracking-wider ">
               Suresh Pal
             </p>
@@ -104,7 +104,7 @@ const Navbar = () => {
                     key={link.id}
                     className={`${
                       active === link.name ? "text-white" : "text-secondary"
-                    } hover:text-white  text-lg cursor-pointer relative  font-Merriweather tracking-wider py-4`}
+                    } hover:text-white  text-xl cursor-pointer relative  font-Merriweather tracking-wider py-4`}
                     onClick={() => {
                       setActive(link.name);
                       setToggle(!toggle);

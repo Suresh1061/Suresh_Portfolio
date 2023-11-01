@@ -16,7 +16,7 @@ const Home = () => {
             Hello, I'm 👋
           </p>
           <h1
-            className={`${styles.homeHeadingText} font-serif text-[#915eff] `}
+            className={`${styles.homeHeadingText} font-serif text-[#915eff] violet-text-gradient`}
           >
             Suresh Pal
           </h1>
