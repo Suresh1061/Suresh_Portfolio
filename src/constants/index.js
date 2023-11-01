@@ -297,7 +297,7 @@ export const ProjectDetails = [
         color: "blue-text-gradient",
       },
       {
-        name: "axios",
+        name: "localStorage",
         color: "green-text-gradient",
       },
       {

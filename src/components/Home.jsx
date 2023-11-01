@@ -30,7 +30,7 @@ const Home = () => {
               deleteSpeed={40}
               loop={0}
               typeSpeed={100}
-              words={["Front-end Developer", "DSA Learner"]}
+              words={["Front-end Developer", "DSA with C++"]}
             />
           </h1>
           <a

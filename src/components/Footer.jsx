@@ -10,14 +10,14 @@ import { motion } from "framer-motion";
 const Footer = () => {
   const year = new Date().getFullYear();
   return (
-    <div className=" h-[80px] w-full bg-footer bg-center bg-cover mt-10 flex flex-row  justify-around items-center border-t  max-[700px]:flex-col ">
-      <h3 className=" max-[700px]:order-2 max-[700px]:mb-2 font-Lora tracking-wider">
+    <div className=" h-[80px] w-full bg-footer bg-center bg-cover mt-10 flex flex-row  justify-around items-center border-t  max-[750px]:flex-col ">
+      <h3 className=" max-[750px]:order-2 max-[750px]:mb-2 font-Lora tracking-wider opacity-85">
         Copyright © {year}
       </h3>
-      <h1 className=" text-2xl font-Roboto tracking-wide  max-[700px]:order-1 max-[700px]:my-2">
-        Made by Suresh Pal
+      <h1 className="text-[22px] sm:text-2xl font-Roboto tracking-wide  max-[750px]:order-1 max-[750px]:my-2">
+        Made with ❤️ by Suresh Pal
       </h1>
-      <div className=" w-[200px]  flex justify-between text-gray-250 max-[700px]:hidden">
+      <div className=" w-[200px]  flex justify-between text-gray-250 max-[750px]:hidden">
         <div className="  rounded-full green-pink-gradient  p-[1px] ">
           <motion.a
             whileHover={{ scale: 1.1 }}

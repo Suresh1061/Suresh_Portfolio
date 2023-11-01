@@ -19,11 +19,11 @@ const About = () => {
       </motion.div>
       <div className=" grid grid-cols-1 min-[800px]:grid-cols-3 gap-10 mb-16">
         <div className=" flex justify-center items-center min-[800px]:order-2 order-1">
-          <div className=" bg-gradient-to-b from-[#e72121] to-[#8533f6] rounded-lg  ">
+          <div className=" bg-[#8533f6] shadow-2xl rounded-lg  ">
             <img
               src={myphoto}
               alt="my photo"
-              className=" h-[285px] w-[245px]  mx-auto rounded-lg translate-x-[8px] -translate-y-[8px] shadow-lg"
+              className=" h-[285px] w-[245px]  mx-auto rounded-lg translate-x-[9px] -translate-y-[8px] shadow-lg"
             />
           </div>
         </div>
@@ -36,7 +36,7 @@ const About = () => {
           >
             Suresh Pal
           </h1>
-          <p className=" opacity-75 font-Lora tracking-wider text-lg text-justify">
+          <p className=" opacity-75 font-Lora tracking-wider text-lg ">
             I am a passionate and driven individual pursuing a Bachelor of
             Technology degree in Electronics and Communication Engineering from
             Ramkrishna Mahato Government Engineering College in Purulia, West
