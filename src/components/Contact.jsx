@@ -63,7 +63,7 @@ const Contact = () => {
         );
     } else {
       setLoading(false);
-      message.warning("Please flill your data");
+      // message.warning("Please flill your data");
     }
   };
 
@@ -141,6 +141,8 @@ const Contact = () => {
                 name="name"
                 value={inputData.name}
                 onChange={handleChange}
+                autoComplete="off"
+                required
                 className="bg-tertiary py-4 px-6 placeholder:opacity-70 text-white rounded-lg outline-none border-none font-medium w-full shadow-inner"
               />
             </label>
@@ -151,6 +153,8 @@ const Contact = () => {
                 name="email"
                 value={inputData.email}
                 onChange={handleChange}
+                autoComplete="off"
+                required
                 className="bg-tertiary py-4 px-6 placeholder:opacity-70 text-white rounded-lg outline-none border-none font-medium w-full"
               />
             </label>
@@ -162,6 +166,8 @@ const Contact = () => {
                 name="message"
                 value={inputData.message}
                 onChange={handleChange}
+                autoComplete="off"
+                required
                 className="bg-tertiary py-4 px-6 placeholder:opacity-70 text-white rounded-lg outline-none border-none font-medium w-full min-h-[120px]"
               />
             </label>
