@@ -263,6 +263,30 @@ export const ProjectDetails = [
   {
     id: 2,
     duration: 0.6,
+    image: todolist,
+    name: "Advance TodoList",
+    description:
+      "Created and deployed an awesom advance Todo list using React and Tailwind and store data in local storage",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "localStorage",
+        color: "green-text-gradient",
+      },
+      {
+        name: "tailwind",
+        color: "orange-text-gradient",
+      },
+    ],
+    gitlink: "https://github.com/Suresh1061/Advance_Todolist",
+    demolink: "https://advance-todolist.vercel.app/",
+  },
+  {
+    id: 3,
+    duration: 0.9,
     image: weather,
     name: "Weather App",
     description:
@@ -283,30 +307,5 @@ export const ProjectDetails = [
     ],
     gitlink: "https://github.com/Suresh1061/Weather_Application",
     demolink: "https://weather-application-topaz.vercel.app/",
-  },
-  {
-    id: 3,
-    duration: 0.9,
-    image: todolist,
-    name: "Advance TodoList",
-    description:
-      "Created and deployed an awesom advance Todo list using React and Tailwind and store data in local storage",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "localStorage",
-        color: "green-text-gradient",
-      },
-      {
-        name: "tailwind",
-        color: "orange-text-gradient",
-      },
-    ],
-    gitlink: "https://github.com/Suresh1061/Advance_Todolist",
-    demolink:
-      "https://advance-todolist-i97luoqze-suresh-pals-projects.vercel.app/",
   },
 ];
