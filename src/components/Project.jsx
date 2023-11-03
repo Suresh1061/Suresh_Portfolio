@@ -56,15 +56,15 @@ const ProjectCard = ({
             </div>
           </div>
           <button className=" w-full flex justify-between mt-4">
-            <a href={demolink} target="_blank">
-              <LiaEditSolid
-                size={26}
-                className=" text-secondary hover:text-white"
-              />
-            </a>
             <a href={gitlink} target="_blank">
               <AiFillGithub
                 size={25}
+                className=" text-secondary hover:text-white"
+              />
+            </a>
+            <a href={demolink} target="_blank">
+              <LiaEditSolid
+                size={26}
                 className=" text-secondary hover:text-white"
               />
             </a>
